@@ -1,26 +1,9 @@
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
-
-h1 {
-    color: darkblue;
-}
-
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-p {
-    padding: 10px;
-}
+< !DOCTYPE html > <html lang="en" > <head > <meta charset="UTF-8" > <meta name="viewport" content="width=device-width, initial-scale=1.0" > <title > Divine Kahute T | WDD 130</title > <meta name="description" content="Divine Kahute T's BYU-Pathway WDD 130 course home page" > <meta name="author" content="Divine Kahute T" > <link rel="stylesheet" href="styles/styles.css" > </head > <body > <header > <nav > <a href="#" > Home</a > <a href="wwr/" > Rafting Website</a > </nav > </header > <main > <h1 > Divine Kahute T | WDD 130</h1 > <img src="images/divine.png" alt="Divine Kahute T Profile Picture" width="200" > <p > Hello ! My name is Divine Kahute T and I'm from Bindura, Zimbabwe. I enjoy learning
+ software development and improving my skills through BYU-Pathway. I also served a full-time mission for The Church of Jesus Christ of Latter-day Saints.</p > </main > <aside > <h2 > Zimbabwe</h2 > <img src="images/zimbabwe.png" alt="Great Zimbabwe Landscape" width="200" > <p > Zimbabwe is a beautiful country in Southern Africa,
+known for its rich culture,
+diverse wildlife,
+and natural wonders such as Victoria Falls and Great Zimbabwe. Its people are known for their resilience,
+hospitality,
+and strong sense of community.</p > </aside > <footer > <p > &copy;
+2026 🐾 Divine Kahute T 🐾 Zimbabwe,
+Bindura</p > </footer > </body > </html >
