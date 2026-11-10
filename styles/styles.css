@@ -1,5 +1,5 @@
 nav {
-    background-color: darkblue;
+    background-color: rgb(39, 105, 248);
     padding: 10px;
 }
 
@@ -14,7 +14,7 @@ main {
 }
 
 h1 {
-    color: darkblue;
+    color: rgb(39, 105, 248);
 }
 
 main img {
