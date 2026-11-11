@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: darkblue;
     --secondary-color: white;
@@ -34,12 +40,25 @@ h1 {
     color: rgb(39, 105, 248);
 }
 
+h2 {
+    position: absolute;
+    top: 0px;
+    left: 10 px;
+}
+
+aside h2 {
+    width: 18rem;
+    text-align: center;
+    position: relative;
+}
+
 main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -66,3 +85,11 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(214, 214, 214);
+}
+
+/* Class Selectors */
