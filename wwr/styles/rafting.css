@@ -1,0 +1,120 @@
+:root {
+    --primary-color: oklch(41.839% 0.26973 271.951 / 0.928);
+    /* forest green */
+    --secondary-color: #f4a261;
+    /* warm sand */
+    --text1-color: #050a0c;
+    ;
+    /* dark slate blue */
+    --text2-color: #050507;
+    /* light golden yellow */
+    --heading-font: "Times New Roman",
+        "Georgia",
+        serif;
+    --body-font: Arial,
+        Helvetica,
+        sans-serif;
+}
+
+/* header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    
+    } */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text2-color);
+}
+
+header,
+main,
+footer {
+    width: 950px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 20px;
+    padding: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+}
+
+.hero article {
+    position: absolute;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--text1-color);
+    color: #fff;
+    /* white text – make sure there is enough contrast with the background-color */
+}
+
+.hero article img {
+    float: right;
+    width: 140px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+article {
+    position: absolute;
+    top: 355px;
+    width: 90%;
+    padding: 1px;
+    text-align: center;
+    opacity: 0.6;
+    background-color: var(--text1-color);
+    color: #fff;
+    /* white text – make sure there is enough contrast with the background-color */
+}
+
+h2 {
+    position: relative;
+    top: 1px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: var(--text1-color);
+    color: #fff;
+    /* white text – make sure there is enough contrast with the background-color */
+}
