@@ -1,12 +1,12 @@
 :root {
     --primary-color: oklch(41.839% 0.26973 271.951 / 0.928);
     /* forest green */
-    --secondary-color: #f4a261;
+    --secondary-color: #fff;
     /* warm sand */
-    --text1-color: #050a0c;
+    --accent1-color: #050a0c;
     ;
     /* dark slate blue */
-    --text2-color: #050507;
+    --accent2-color: #050507;
     /* light golden yellow */
     --heading-font: "Times New Roman",
         "Georgia",
@@ -30,7 +30,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--text2-color);
+    color: var(--accent2-color);
 }
 
 header,
@@ -83,7 +83,7 @@ h1 {
     padding: 5px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--text1-color);
+    background-color: var(--accent1-color);
     color: #fff;
     /* white text – make sure there is enough contrast with the background-color */
 }
@@ -102,7 +102,7 @@ article {
     padding: 1px;
     text-align: center;
     opacity: 0.6;
-    background-color: var(--text1-color);
+    background-color: var(--accent1-color);
     color: #fff;
     /* white text – make sure there is enough contrast with the background-color */
 }
@@ -114,7 +114,7 @@ h2 {
     padding: 10px;
     text-align: center;
     opacity: 0.8;
-    background-color: var(--text1-color);
-    color: #fff;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
     /* white text – make sure there is enough contrast with the background-color */
 }
