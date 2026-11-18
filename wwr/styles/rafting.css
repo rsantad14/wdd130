@@ -1,19 +1,10 @@
 :root {
     --primary-color: oklch(41.839% 0.26973 271.951 / 0.928);
-    /* forest green */
     --secondary-color: #fff;
-    /* warm sand */
     --accent1-color: #050a0c;
-    ;
-    /* dark slate blue */
     --accent2-color: #050507;
-    /* light golden yellow */
-    --heading-font: "Times New Roman",
-        "Georgia",
-        serif;
-    --body-font: Arial,
-        Helvetica,
-        sans-serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -27,13 +18,7 @@ body {
     color: var(--accent2-color);
 }
 
-header,
-main,
-footer {
-    width: 950px;
-    margin: 0 auto;
-}
-
+/* ===== 1. HEADER - CSS GRID ===== */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -41,8 +26,19 @@ header {
     gap: 20px;
     background-color: var(--primary-color);
     padding: 15px 25px;
+    width: 100%;
 }
 
+header img {
+    width: 85px;
+    height: auto;
+    display: block;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 3px;
+}
+
+/* ===== 2. NAV - CSS FLEX ===== */
 nav ul {
     display: flex;
     justify-content: flex-end;
@@ -53,34 +49,43 @@ nav ul {
     padding: 0;
 }
 
+nav a {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* ===== MAIN / CONTENT ===== */
+main,
+footer {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav,
 p,
-section,
-article {
+section {
     margin: 20px;
     padding: 10px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
+/* ===== HERO ===== */
 .hero {
     position: relative;
-}
-
-.hero h1 {
-    position: absolute;
-}
-
-.hero article {
-    position: absolute;
 }
 
 .hero img {
@@ -89,7 +94,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 5px;
     width: 100%;
@@ -98,7 +103,17 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
-    /* white text – make sure there is enough contrast with the background-color */
+}
+
+.hero article {
+    position: absolute;
+    top: 355px;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    opacity: 0.6;
+    background-color: var(--accent1-color);
+    color: #fff;
 }
 
 .hero article img {
@@ -108,26 +123,89 @@ h1 {
     border: 1px solid black;
 }
 
-article {
-    position: absolute;
-    top: 355px;
-    width: 90%;
-    padding: 1px;
-    text-align: center;
-    opacity: 0.6;
-    background-color: var(--accent1-color);
-    color: #fff;
-    /* white text – make sure there is enough contrast with the background-color */
+/* ===== 3. HISTORY - GRID 3 COLUMNS ===== */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
-h2 {
-    position: relative;
-    top: 1px;
-    width: 100%;
-    padding: 10px;
+.history h2 {
+    grid-column: 1 / 4;
     text-align: center;
-    opacity: 0.8;
     background-color: var(--accent1-color);
     color: var(--secondary-color);
-    /* white text – make sure there is enough contrast with the background-color */
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ===== 4. ADVENTURES - GRID 5 COLUMNS ===== */
+.adventures h2 {
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+    font-weight: bold;
+    margin-top: 8px;
+    font-family: var(--heading-font);
+}
+
+/* ===== 5. FOOTER - FLEX, SOCIAL TO RIGHT ===== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px 25px;
+    max-width: 950px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+    display: block;
 }
