@@ -3,12 +3,8 @@
     --secondary-color: #fff;
     --accent1-color: #050a0c;
     --accent2-color: #050507;
-    --heading-font: "Times New Roman",
-        "Georgia",
-        serif;
-    --body-font: Arial,
-        Helvetica,
-        sans-serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -34,7 +30,6 @@ header {
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 20px;
-    /* background-color: var(--secondary-color); */
     padding: 15px 25px;
 }
 
@@ -66,19 +61,7 @@ article {
     text-decoration: none;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero h1 {
-    position: absolute;
-}
-
-.hero article {
-    position: absolute;
-}
-
-/* HERO */
+/* HERO - ONLY ONE TIME, ALL TOGETHER */
 .hero {
     position: relative;
     width: 100%;
@@ -197,7 +180,6 @@ footer {
     background-color: var(--secondary-color);
     color: black;
     padding: 15px 25px;
-    width: 100%;
     box-sizing: border-box;
 }
 
