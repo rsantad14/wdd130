@@ -1,6 +1,6 @@
 :root {
-    --primary-color: oklch(41.839% 0.26973 271.951 / 0.928);
-    --secondary-color: #fff;
+    --primary-color: #2a4d8f;
+    --secondary-color: #ffffff;
     --accent1-color: #050a0c;
     --accent2-color: #050507;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -49,19 +49,11 @@ h2 {
     color: var(--primary-color);
 }
 
-nav,
-p,
-section,
-article {
-    margin: 20px;
-    padding: 10px;
-}
-
 .socialmedia a {
     text-decoration: none;
 }
 
-/* HERO - ONLY ONE TIME, ALL TOGETHER */
+/* HERO */
 .hero {
     position: relative;
     width: 100%;
@@ -82,7 +74,7 @@ article {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #ffffff;
     box-sizing: border-box;
 }
 
@@ -95,7 +87,7 @@ article {
     text-align: left;
     opacity: 0.85;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #ffffff;
     box-sizing: border-box;
 }
 
@@ -103,7 +95,7 @@ article {
     float: right;
     width: 140px;
     margin: 0 0 10px 10px;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
 }
 
 /* HISTORY SECTION */
@@ -119,7 +111,7 @@ article {
     grid-column: 1 / 4;
     text-align: center;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #ffffff;
     padding: 10px;
 }
 
@@ -143,7 +135,7 @@ article {
 .adventures h2 {
     text-align: center;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #ffffff;
     padding: 10px;
 }
 
@@ -178,7 +170,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
-    color: black;
+    color: #000000;
     padding: 15px 25px;
     box-sizing: border-box;
 }
