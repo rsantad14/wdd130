@@ -78,53 +78,49 @@ article {
     position: absolute;
 }
 
+/* HERO */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
-    top: 5px;
+    top: 20px;
+    left: 0;
     width: 100%;
-    padding: 5px;
+    padding: 15px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
-    /* white text – make sure there is enough contrast with the background-color */
+    box-sizing: border-box;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    padding: 10px;
+    text-align: left;
+    opacity: 0.85;
+    background-color: var(--accent1-color);
+    color: #fff;
+    box-sizing: border-box;
 }
 
 .hero article img {
     float: right;
     width: 140px;
-    margin: 10px;
-    border: 1px solid black;
-}
-
-article {
-    position: absolute;
-    top: 355px;
-    width: 90%;
-    padding: 1px;
-    text-align: center;
-    opacity: 0.6;
-    background-color: var(--accent1-color);
-    color: #fff;
-
-}
-
-h2 {
-    position: relative;
-    top: 1px;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    opacity: 0.8;
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
-
+    margin: 0 0 10px 10px;
+    border: 1px solid #fff;
 }
 
 /* HISTORY SECTION */
@@ -133,6 +129,7 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     align-items: center;
+    padding: 20px;
 }
 
 .history h2 {
@@ -155,13 +152,16 @@ h2 {
     text-align: justify;
 }
 
-/* ADVENTURES - GRID 5 COLUMNS SECTION */
+/* ADVENTURES */
+.adventures {
+    padding: 20px;
+}
+
 .adventures h2 {
     text-align: center;
     background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    color: #fff;
     padding: 10px;
-    opacity: 0.8;
 }
 
 .adventure-gallery {
@@ -189,7 +189,7 @@ h2 {
     font-family: var(--heading-font);
 }
 
-/* FOOTER - FLEX, SOCIAL TO RIGHT SECTION */
+/* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
@@ -197,7 +197,8 @@ footer {
     background-color: var(--secondary-color);
     color: black;
     padding: 15px 25px;
-    max-width: 950px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 footer p {
@@ -207,10 +208,6 @@ footer p {
 .socialmedia {
     display: flex;
     gap: 15px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .socialmedia img {
