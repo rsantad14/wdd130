@@ -189,3 +189,134 @@ footer p {
     height: 35px;
     display: block;
 }
+
+.contact-header {
+    text-align: center;
+    padding: 20px;
+    margin: 1rem 0;
+}
+
+.contact-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+    margin: 3px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 0 20px 20px;
+    align-items: start;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    align-items: start;
+    gap: 10px;
+}
+
+.form-row label,
+.form-row p {
+    text-align: right;
+    font-weight: bold;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #999;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.radio-group label {
+    text-align: left;
+    font-weight: normal;
+}
+
+.checkbox-row label {
+    text-align: left;
+    font-weight: normal;
+    grid-column: 2;
+}
+
+.contact-form button {
+    align-self: flex-end;
+    width: 100%;
+    max-width: 300px;
+    padding: 0.6rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent1-color);
+}
+
+.employees {
+    border: 1px solid var(--accent1-color);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.employees h2 {
+    margin-bottom: 1rem;
+    background-color: var(--accent1-color);
+    color: #fff;
+    padding: 10px;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.employee-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.employee-gallery img {
+    width: 180px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.employee-gallery figcaption {
+    font-weight: bold;
+    margin-top: 8px;
+    font-family: var(--heading-font);
+}
